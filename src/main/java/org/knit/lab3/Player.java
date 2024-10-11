@@ -41,6 +41,8 @@ public abstract class Player {
         if (health < 0) {
             health = 0;
             isAlive = false;
+            System.out.println(new StringBuilder().append(getName()).append(" умер, получив ").append(value)
+                    .append(" урона."));
         }
     }
 

@@ -1,16 +1,16 @@
 package org.knit.lab3;
 
-public class Mage extends Player implements Casting {
+public class Warrior extends Player implements Melee {
 
-    public Mage(String name, float posX, float posY) {
+    public Warrior(String name, float posX, float posY) {
         super(name, posX, posY);
-        setDamageValue(15);
-        setAttackRange(15);
-        setMaxHealth(100);
+        setDamageValue(25);
+        setAttackRange(1);
+        setMaxHealth(150);
     }
 
     @Override
-    public void cast(Object t) {
+    public void attack(Object t) {
         if (checkIsAlive()) {
             if (t instanceof Player) {
                 if (t != this) {
@@ -26,18 +26,18 @@ public class Mage extends Player implements Casting {
                     }
                 }
                 else {
-                    System.out.println("Зачем себя очернять магией?");
+                    System.out.println("Зарезать себя нельзя!");
                 }
             }
         }
         else {
-            System.out.println("Мёрвые не кастуют лол....");
+            System.out.println("Будучи мёртвым ты даже меч не поднимеш");
         }
     }
 
     @Override
     public String toString() {
-        return new StringBuilder().append("Маг ").append(getName()).append(".")
+        return new StringBuilder().append("Мечник ").append(getName()).append(".")
                 .append("\nНаходится на координатах ").append(getPosX()).append(", ").append(getPosY())
                 .append(".")
                 .append("\nМожет нанести ").append(getDamageValue()).append(" урона")
