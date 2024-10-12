@@ -30,17 +30,7 @@ public class DictionaryStatistic {
     }
 
     private void calculateSymbolsStats() {
-        for (String word : words) {
-            char[] charsOfWord = word.toCharArray();
-            for (char ch : charsOfWord) {
-                if (symbolStats.get(ch) != null) {
-                    symbolStats.put(ch, symbolStats.get(ch) + 1);
-                }
-                else {
-                    symbolStats.put(ch, 1);
-                }
-            }
-        }
+
     }
 
 }
