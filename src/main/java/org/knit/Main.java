@@ -1,13 +1,13 @@
 package org.knit;
 
-import org.knit.lab5.Task9;
+import org.knit.lab6.Task10;
 
 import java.io.FileNotFoundException;
 
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Task9 task = new Task9();
+        Task10 task = new Task10();
         task.execute();
     }
 }
