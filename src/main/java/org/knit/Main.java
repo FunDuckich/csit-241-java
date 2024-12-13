@@ -1,13 +1,10 @@
 package org.knit;
 
-import org.knit.lab9.Task16;
-
-import java.io.IOException;
-
+import org.knit.lab9.Task17;
 
 public class Main {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Task16 task = new Task16();
+    public static void main(String[] args) throws IllegalAccessException {
+        Task17 task = new Task17();
         task.execute();
     }
 }
