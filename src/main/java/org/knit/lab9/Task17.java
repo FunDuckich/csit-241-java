@@ -2,7 +2,7 @@ package org.knit.lab9;
 
 public class Task17 {
     public void execute() throws IllegalAccessException {
-        User user = new User(null, "LongUsernameHere", 3);
+        User user = new User(null, "LongUsernameHere", 16);
         try {
             Validator.validate(user);
         }
