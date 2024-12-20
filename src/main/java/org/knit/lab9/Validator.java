@@ -4,18 +4,19 @@ import java.lang.reflect.Field;
 
 public class Validator {
     public static void validate(Object obj) throws IllegalAccessException {
-        Class<?> clazz = obj.getClass();
-        Field[] fields = clazz.getDeclaredFields();
+        Field[] fields = obj.getClass().getDeclaredFields();
 
         for (Field field : fields) {
             field.setAccessible(true);
             Object value = field.get(obj);
 
             if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                System.out.println("Есть аннотация NotNull");
                 System.out.println("Поле " + field.getName() + " не должно быть null.");
             }
 
             if (field.isAnnotationPresent(MaxLength.class)) {
+                System.out.println("Есть аннотация MaxLength");
                 if (value instanceof String) {
                     int maxLength = field.getAnnotation(MaxLength.class).value();
                     if (((String) value).length() > maxLength) {
@@ -29,6 +30,7 @@ public class Validator {
 
 
             if (field.isAnnotationPresent(Min.class)) {
+                System.out.println("Есть аннотация Min");
                 if (value instanceof Integer) {
                     int minValue = field.getAnnotation(Min.class).value();
                     if ((int) value < minValue) {

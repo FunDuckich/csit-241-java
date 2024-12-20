@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.knit.tasks</groupId>
-    <artifactId>knit241_template</artifactId>
+    <groupId>org.knit</groupId>
+    <artifactId>knit241</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -26,12 +26,11 @@
             <artifactId>guava</artifactId>
             <version>32.1.2-jre</version>
         </dependency>
+
         <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.4</version>
         </dependency>
     </dependencies>
-
 </project>
