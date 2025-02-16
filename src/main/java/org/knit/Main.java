@@ -1,13 +1,9 @@
 package org.knit;
 
-import org.knit.lab9.*;
-import org.knit.lab10.*;
-import org.knit.lab11.*;
-
-import java.sql.SQLException;
+import org.knit.lab2sem1.*;
 
 public class Main {
-    public static void main(String[] args) throws IllegalAccessException, SQLException {
-        Task25.execute();
+    public static void main(String[] args) {
+        Task2_1.execute();
     }
 }
