@@ -1,9 +1,9 @@
 package org.knit;
 
-import org.knit.lab2sem1.*;
+import org.knit.lab1sem2.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task2_1.execute();
+        Task2_3.execute();
     }
 }

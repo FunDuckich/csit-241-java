@@ -1,4 +1,4 @@
-package org.knit.lab2sem1;
+package org.knit.lab1sem2;
 
 public abstract class ComplaintHandler {
     protected ComplaintHandler nextHandler;
