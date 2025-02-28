@@ -1,6 +1,6 @@
 package org.knit.lab1sem2;
 
-public class Task2_1 {
+public class Task1 {
     public static void execute() {
         ComplaintHandler callCenter = new CallCenterHandler();
         ComplaintHandler manager = new ManagerHandler();

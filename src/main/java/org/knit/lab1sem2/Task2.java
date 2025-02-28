@@ -1,6 +1,6 @@
 package org.knit.lab1sem2;
 
-public class Task2_2 {
+public class Task2 {
     public static void execute() {
         Coffee espresso = new Espresso();
         System.out.println(espresso.getDescription() + " | Цена: $" + espresso.getCost() + " | Калорийность: " + espresso.getCalories() + " ккал");

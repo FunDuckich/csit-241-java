@@ -1,7 +1,7 @@
 package org.knit.lab1sem2;
 
 public class SizeDecorator extends CoffeeDecorator {
-    private final String size; // Размер кофе
+    private final String size;
 
     public SizeDecorator(Coffee coffee, String size) {
         super(coffee);
